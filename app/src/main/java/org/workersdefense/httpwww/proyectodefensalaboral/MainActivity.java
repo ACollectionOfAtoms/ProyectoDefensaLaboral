@@ -7,10 +7,6 @@ import android.os.AsyncTask;
 import android.widget.Button;
 import android.widget.EditText;
 
-import org.xmlpull.v1.XmlPullParser;
-import org.xmlpull.v1.XmlPullParserException;
-import org.xmlpull.v1.XmlPullParserFactory;
-
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.IOException;

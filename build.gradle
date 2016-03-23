@@ -2,7 +2,7 @@
 
 buildscript {
     repositories {
-        jcenter()
+        mavenCentral()
 ***REMOVED***
     dependencies {
         classpath 'com.android.tools.build:gradle:1.5.0'
@@ -14,7 +14,7 @@ buildscript {
 
 allprojects {
     repositories {
-        jcenter()
+        mavenCentral()
 ***REMOVED***
 ***REMOVED***
 
