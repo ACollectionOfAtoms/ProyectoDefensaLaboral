@@ -54,5 +54,4 @@
             android:layout_height="wrap_content"
             android:layout_weight=".75" />
     </LinearLayout>
-
 </LinearLayout>
