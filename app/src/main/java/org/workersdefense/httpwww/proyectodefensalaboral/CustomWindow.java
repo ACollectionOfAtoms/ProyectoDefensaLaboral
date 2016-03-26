@@ -9,6 +9,7 @@ import android.widget.ImageView;
 ***REMOVED***
  * Created by dhernandez on 3/22/16.
 ***REMOVED***
+
 public class CustomWindow extends Activity {
     protected TextView title;
     protected ImageView icon;

@@ -3,31 +3,43 @@
 ***REMOVED***
 ***REMOVED***
 ***REMOVED***
+***REMOVED***
 import android.widget.Button;
+import android.widget.EditText;
+***REMOVED***
+
+***REMOVED***
+***REMOVED***
+***REMOVED***
+***REMOVED***
+***REMOVED***
+
+***REMOVED***
 
 
 public class MainActivity extends CustomWindow {
-    public static final String apiURL = "https://0h0zitnt47.execute-api.us-west-2.amazonaws.com/prod/";
+    Button mButton;
+    EditText mEmpZipEditText;
+    EditText mEmpNameEditText;
 
 ***REMOVED***
 ***REMOVED***
 ***REMOVED***
         this.title.setText("Know Your Employer");
-        Button b1 = (Button) findViewById(R.id.b1);
-        b1.setOnClickListener(new View.OnClickListener() {
-        ***REMOVED***
-            public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setClass(MainActivity.this, Results.class);
-                startActivity(intent);
-        ***REMOVED***
-    ***REMOVED***);
 
-        Button b2 = (Button) findViewById(R.id.b2);
-        b2.setOnClickListener(new View.OnClickListener() {
+        mButton = (Button) findViewById(R.id.b1);
+        mEmpNameEditText = (EditText)findViewById(R.id.emp_name);
+        mEmpZipEditText = (EditText)findViewById(R.id.zipcode);
+
+        mButton.setOnClickListener(new View.OnClickListener() {
         ***REMOVED***
             public void onClick(View v) {
+                String searchName = mEmpNameEditText.getText().toString();
+                String searchZip = mEmpZipEditText.getText().toString();
+
                 Intent intent = new Intent();
+                intent.putExtra("name", searchName);
+                intent.putExtra("zip", searchZip);
                 intent.setClass(MainActivity.this, Results.class);
                 startActivity(intent);
         ***REMOVED***
