@@ -2,32 +2,44 @@ package org.workersdefense.httpwww.proyectodefensalaboral;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import com.algolia.search.saas.APIClient;
+import com.algolia.search.saas.AlgoliaException;
+import com.algolia.search.saas.Index;
+import com.algolia.search.saas.Query;
+import com.algolia.search.saas.listeners.SearchListener;
+
+import org.json.JSONObject;
 
 
 public class MainActivity extends CustomWindow {
-    public static final String apiURL = "https://0h0zitnt47.execute-api.us-west-2.amazonaws.com/prod/";
+    Button mButton;
+    EditText mEmpZipEditText;
+    EditText mEmpNameEditText;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.title.setText("Know Your Employer");
-        Button b1 = (Button) findViewById(R.id.b1);
-        b1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setClass(MainActivity.this, Results.class);
-                startActivity(intent);
-            }
-        });
 
-        Button b2 = (Button) findViewById(R.id.b2);
-        b2.setOnClickListener(new View.OnClickListener() {
+        mButton = (Button) findViewById(R.id.b1);
+        mEmpNameEditText = (EditText)findViewById(R.id.emp_name);
+        mEmpZipEditText = (EditText)findViewById(R.id.zipcode);
+
+        mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String searchName = mEmpNameEditText.getText().toString();
+                String searchZip = mEmpZipEditText.getText().toString();
+
                 Intent intent = new Intent();
+                intent.putExtra("name", searchName);
+                intent.putExtra("zip", searchZip);
                 intent.setClass(MainActivity.this, Results.class);
                 startActivity(intent);
             }
