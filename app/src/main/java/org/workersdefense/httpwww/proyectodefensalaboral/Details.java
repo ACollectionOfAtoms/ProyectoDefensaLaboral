@@ -5,6 +5,7 @@ import android.os.Bundle;
 /**
  * Created by dhernandez on 3/22/16.
  */
+
 public class Details extends CustomWindow {
     @Override
     public void onCreate(Bundle savedInstanceState) {
