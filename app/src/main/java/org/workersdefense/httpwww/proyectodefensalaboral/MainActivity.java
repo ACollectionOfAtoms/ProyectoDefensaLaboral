@@ -6,15 +6,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
-
-import com.algolia.search.saas.APIClient;
-import com.algolia.search.saas.AlgoliaException;
-import com.algolia.search.saas.Index;
-import com.algolia.search.saas.Query;
-import com.algolia.search.saas.listeners.SearchListener;
-
-import org.json.JSONObject;
 
 
 public class MainActivity extends CustomWindow {
