@@ -6,15 +6,6 @@
 ***REMOVED***
 import android.widget.Button;
 import android.widget.EditText;
-***REMOVED***
-
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-
-***REMOVED***
 
 
 public class MainActivity extends CustomWindow {
