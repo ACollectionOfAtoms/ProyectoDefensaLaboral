@@ -5,6 +5,7 @@
 ***REMOVED***
  * Created by dhernandez on 3/22/16.
 ***REMOVED***
+
 public class Details extends CustomWindow {
 ***REMOVED***
 ***REMOVED***
