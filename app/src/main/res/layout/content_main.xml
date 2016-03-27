@@ -16,20 +16,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Search by Name"/>
-        <Button
-            android:id="@+id/b1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="i"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <EditText
             android:id="@+id/emp_name"
-            android:layout_width="150dip"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight=".75" />
+            android:layout_weight="1" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -39,19 +34,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Search by Zip Code"/>
-        <Button
-            android:id="@+id/b2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="i"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <EditText
             android:id="@+id/zipcode"
-            android:layout_width="150dip"
             android:layout_height="wrap_content"
-            android:layout_weight=".75" />
+            android:layout_width="wrap_content"
+            android:layout_weight="1" />
     </LinearLayout>
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="GO"/>
 </LinearLayout>

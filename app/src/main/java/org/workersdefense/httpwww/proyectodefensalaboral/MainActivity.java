@@ -20,7 +20,9 @@ public class MainActivity extends CustomWindow {
 
         mButton = (Button) findViewById(R.id.b1);
         mEmpNameEditText = (EditText)findViewById(R.id.emp_name);
+        mEmpNameEditText.setHint("Type Employer's/Company's Name");
         mEmpZipEditText = (EditText)findViewById(R.id.zipcode);
+        mEmpZipEditText.setHint("Type Employer's Zipcode");
 
         mButton.setOnClickListener(new View.OnClickListener() {
         ***REMOVED***

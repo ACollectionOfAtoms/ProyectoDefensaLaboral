@@ -7,7 +7,7 @@ import android.widget.ImageView;
 ***REMOVED***
 
 ***REMOVED***
- * Created by dhernandez on 3/22/16.
+***REMOVED***
 ***REMOVED***
 
 public class CustomWindow extends Activity {
