@@ -7,7 +7,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
- * Created by dhernandez on 3/22/16.
+ * Created by ahernandez on 3/22/16.
  */
 
 public class CustomWindow extends Activity {
