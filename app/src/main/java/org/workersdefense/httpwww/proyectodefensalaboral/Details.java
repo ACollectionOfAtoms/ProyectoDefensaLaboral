@@ -46,7 +46,7 @@ public class Details extends CustomWindow {
         violationCountView.setText(violationCount);
         violationDataView.setText(violationData);
 
-
+        // TODO Add list of violation types with details for each row
         this.title.setText(name);
         // this.icon.setImageResource(R.drawable.menu_info);
 ***REMOVED***
