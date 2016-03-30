@@ -34,5 +34,9 @@
         android:id="@+id/details_violation_data"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+    <ExpandableListView
+        android:id="@+id/lvExp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ExpandableListView>
 
 </LinearLayout>
