@@ -66,21 +66,17 @@ public class Details extends CustomWindow {
             for (int i = 0; i < violationData.length(); i++) {
                 System.out.println(violationData.getJSONObject(i).get("type"));
                 if (violationData.getJSONObject(i).get("type").equals("OSHA")) {
-                    //oshaViolationCount += (int)violationData.getJSONObject(i).get("count");
+                    // oshaViolationCount += (int)violationData.getJSONObject(i).get("count");
                     oshaViolationCount += 1;
                 } else if (violationData.getJSONObject(i).get("type").equals("TWC")) {
-                    //wageTheftViolationCount += (int)violationData.getJSONObject(i).get("count");
+                    // wageTheftViolationCount += (int)violationData.getJSONObject(i).get("count");
                     wageTheftViolationCount += 1;
                 } else if (violationData.getJSONObject(i).get("type").equals("WHD")) {
-                    //minWageViolationCount += (int)violationData.getJSONObject(i).get("count");
+                    // minWageViolationCount += (int)violationData.getJSONObject(i).get("count");
                     minWageViolationCount += 1;
                 }
             }
 
-            violationDataView.setText("OSHA Violations: " + Integer.toString(oshaViolationCount) + "\n"
-                                      + "Wage Theft Violations: " + Integer.toString(wageTheftViolationCount) + "\n"
-                                      + "Minimum Wage Violations: " + Integer.toString(minWageViolationCount)
-            );
         } catch (JSONException e) {
             e.printStackTrace();
             String altViolationData = intent.getStringExtra("violationData");
