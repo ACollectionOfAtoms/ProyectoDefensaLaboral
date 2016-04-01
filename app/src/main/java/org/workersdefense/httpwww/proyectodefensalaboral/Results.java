@@ -78,7 +78,12 @@ public class Results extends CustomWindow implements SearchListener {
                 String name = row.getString(NAME);
                 String postal = row.getString(POSTAL);
                 String address = row.getString(ADDRESS);
-                String totalViolations = Integer.toString(row.getJSONArray(VIOLATIONS).length()) + " total violations";
+                int violationsCount = 0;
+                JSONArray totalViolationsArray = row.getJSONArray(VIOLATIONS);
+                for (int j = 0; j < totalViolationsArray.length(); j ++) {
+                    violationsCount += totalViolationsArray.getJSONObject(j).getInt("count");
+                }
+                String totalViolations = Integer.toString(violationsCount) + " total violations";
                 String violationData = row.getString(VIOLATIONS);
 
                 // Construct HashMap
