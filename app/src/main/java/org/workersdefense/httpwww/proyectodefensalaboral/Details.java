@@ -62,25 +62,19 @@ public class Details extends CustomWindow {
 
 ***REMOVED***
             violationData = new JSONArray(intent.getStringExtra("violationData"));
-            System.out.println(intent.getStringExtra("violationData"));
+            System.out.println(violationData);
             for (int i = 0; i < violationData.length(); i++) {
                 System.out.println(violationData.getJSONObject(i).get("type"));
                 if (violationData.getJSONObject(i).get("type").equals("OSHA")) {
-                    // oshaViolationCount += (int)violationData.getJSONObject(i).get("count");
-                    oshaViolationCount += 1;
+                    oshaViolationCount += violationData.getJSONObject(i).getInt("count");
             ***REMOVED*** else if (violationData.getJSONObject(i).get("type").equals("TWC")) {
-                    // wageTheftViolationCount += (int)violationData.getJSONObject(i).get("count");
-                    wageTheftViolationCount += 1;
+                    wageTheftViolationCount += violationData.getJSONObject(i).getInt("count");
             ***REMOVED*** else if (violationData.getJSONObject(i).get("type").equals("WHD")) {
-                    // minWageViolationCount += (int)violationData.getJSONObject(i).get("count");
-                    minWageViolationCount += 1;
+                    minWageViolationCount += violationData.getJSONObject(i).getInt("count");
             ***REMOVED***
         ***REMOVED***
-
     ***REMOVED*** catch (JSONException e) {
 ***REMOVED***
-            String altViolationData = intent.getStringExtra("violationData");
-            violationDataView.setText(altViolationData);
     ***REMOVED***
 
         nameView.setText(name);
@@ -114,16 +108,13 @@ public class Details extends CustomWindow {
 
         // Adding child data
         List<String> osha = new ArrayList<String>();
-        osha.add(String.format("%d violations in the past 6 years\n " +
-                "Did not pay the total amount due to X workers in the past 6 years", oshaViolationCount));
+        osha.add(String.format("%d violations in the past 6 years\n ", oshaViolationCount));
 
         List<String> minWage = new ArrayList<String>();
-        minWage.add(String.format("%d violations in the past 6 years\n " +
-                "Did not pay the total amount due to X workers in the past 6 years", minWageViolationCount));
+        minWage.add(String.format("%d violations in the past 6 years\n ", minWageViolationCount));
 
         List<String> wageTheft = new ArrayList<String>();
-        wageTheft.add(String.format("%d violations in the past 6 years\n " +
-                " X workers in the past 6 years", wageTheftViolationCount));
+        wageTheft.add(String.format("%d violations in the past 6 years\n ", wageTheftViolationCount));
 
         listDataChild.put(listDataHeader.get(0), osha); // Header, Child data
         listDataChild.put(listDataHeader.get(1), minWage);
