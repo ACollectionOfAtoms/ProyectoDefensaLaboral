@@ -3,9 +3,9 @@
 ***REMOVED***
 ***REMOVED***
 ***REMOVED***
-***REMOVED***
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 
 public class MainActivity extends CustomWindow {
@@ -29,6 +29,10 @@ public class MainActivity extends CustomWindow {
             public void onClick(View v) {
                 String searchName = mEmpNameEditText.getText().toString();
                 String searchZip = mEmpZipEditText.getText().toString();
+                if (searchName.matches("") && searchZip.matches("")) {
+                    makeToast("Please enter a zipcode or employer name.");
+                    return;
+            ***REMOVED***
 
                 Intent intent = new Intent();
                 intent.putExtra("name", searchName);
@@ -37,5 +41,8 @@ public class MainActivity extends CustomWindow {
                 startActivity(intent);
         ***REMOVED***
     ***REMOVED***);
+***REMOVED***
+    public void makeToast(String text) {
+        Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
 ***REMOVED***
 ***REMOVED***
