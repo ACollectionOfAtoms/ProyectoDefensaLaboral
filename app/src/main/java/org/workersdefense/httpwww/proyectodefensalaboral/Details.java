@@ -5,7 +5,10 @@
 ***REMOVED***
 ***REMOVED***
 ***REMOVED***
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
+
 import android.app.Activity;
 ***REMOVED***
 ***REMOVED***
@@ -36,6 +39,9 @@ public class Details extends CustomWindow {
     int oshaViolationCount = 0;
     int minWageViolationCount = 0;
     int wageTheftViolationCount = 0;
+    HashMap<String, String> oshaViolations = new HashMap<>();
+    HashMap<String, String> wageTheftViolations = new HashMap<>();
+    HashMap<String, String> minWageViolations = new HashMap<>();
 
 ***REMOVED***
 ***REMOVED***
@@ -66,11 +72,20 @@ public class Details extends CustomWindow {
             for (int i = 0; i < violationData.length(); i++) {
                 System.out.println(violationData.getJSONObject(i).get("type"));
                 if (violationData.getJSONObject(i).get("type").equals("OSHA")) {
-                    oshaViolationCount += violationData.getJSONObject(i).getInt("count");
+                    String vioDate = violationData.getJSONObject(i).getString("date");
+                    String vioCount = violationData.getJSONObject(i).getString("count");
+                    oshaViolations.put(vioDate, vioCount);
+                    oshaViolationCount += Integer.parseInt(vioCount);
             ***REMOVED*** else if (violationData.getJSONObject(i).get("type").equals("TWC")) {
-                    wageTheftViolationCount += violationData.getJSONObject(i).getInt("count");
+                    String vioDate = violationData.getJSONObject(i).getString("date");
+                    String vioCount = violationData.getJSONObject(i).getString("count");
+                    wageTheftViolations.put(vioDate, vioCount);
+                    wageTheftViolationCount += Integer.parseInt(vioCount);
             ***REMOVED*** else if (violationData.getJSONObject(i).get("type").equals("WHD")) {
-                    minWageViolationCount += violationData.getJSONObject(i).getInt("count");
+                    String vioDate = violationData.getJSONObject(i).getString("date");
+                    String vioCount = violationData.getJSONObject(i).getString("count");
+                    minWageViolations.put(vioDate, vioCount);
+                    minWageViolationCount += Integer.parseInt(vioCount);
             ***REMOVED***
         ***REMOVED***
     ***REMOVED*** catch (JSONException e) {
@@ -104,20 +119,32 @@ public class Details extends CustomWindow {
         // Adding child data
         listDataHeader.add("OSHA: " + oshaViolationCount + " Violations");
         listDataHeader.add("Minimum Wage and Overtime: " +  minWageViolationCount + " Violations");
-        listDataHeader.add("Wage theft: " + wageTheftViolationCount + " wage theft claims");
+        listDataHeader.add("Wage Theft: " + wageTheftViolationCount + " Wage Theft Claims");
 
         // Adding child data
         List<String> osha = new ArrayList<String>();
+        addMapToList(oshaViolations, osha);
         osha.add(String.format("%d violations in the past 6 years\n ", oshaViolationCount));
 
         List<String> minWage = new ArrayList<String>();
+        addMapToList(minWageViolations, minWage);
         minWage.add(String.format("%d violations in the past 6 years\n ", minWageViolationCount));
 
         List<String> wageTheft = new ArrayList<String>();
+        addMapToList(wageTheftViolations, wageTheft);
         wageTheft.add(String.format("%d violations in the past 6 years\n ", wageTheftViolationCount));
 
         listDataChild.put(listDataHeader.get(0), osha); // Header, Child data
         listDataChild.put(listDataHeader.get(1), minWage);
         listDataChild.put(listDataHeader.get(2), wageTheft);
+***REMOVED***
+
+    public static void addMapToList(Map map, List list) {
+        Iterator it = map.entrySet().iterator();
+        while (it.hasNext()) {
+            Map.Entry pair = (Map.Entry) it.next();
+            list.add(pair.getKey() + " : " + pair.getValue());
+            it.remove();
+    ***REMOVED***
 ***REMOVED***
 ***REMOVED***
