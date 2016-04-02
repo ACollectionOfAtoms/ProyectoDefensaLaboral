@@ -93,7 +93,7 @@ public class Details extends CustomWindow {
         //setting list adapter
         expListView.setAdapter(listAdapter);
 
-        this.title.setText(name);
+        this.title.setText("Employer Details");
         // this.icon.setImageResource(R.drawable.menu_info);
 ***REMOVED***
 
@@ -102,9 +102,9 @@ public class Details extends CustomWindow {
         listDataChild = new HashMap<String, List<String>>();
 
         // Adding child data
-        listDataHeader.add("OSHA Violations");
-        listDataHeader.add("Minimum Wage and Overtime Violations");
-        listDataHeader.add("Wage theft claims");
+        listDataHeader.add("OSHA: " + oshaViolationCount + " Violations");
+        listDataHeader.add("Minimum Wage and Overtime: " +  minWageViolationCount + " Violations");
+        listDataHeader.add("Wage theft: " + wageTheftViolationCount + " wage theft claims");
 
         // Adding child data
         List<String> osha = new ArrayList<String>();
