@@ -5,21 +5,13 @@
 ***REMOVED***
 ***REMOVED***
 ***REMOVED***
+***REMOVED***
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import android.app.Activity;
-***REMOVED***
-***REMOVED***
 import android.widget.ExpandableListView;
-import android.widget.ExpandableListView.OnChildClickListener;
-import android.widget.ExpandableListView.OnGroupClickListener;
-import android.widget.ExpandableListView.OnGroupCollapseListener;
-import android.widget.ExpandableListView.OnGroupExpandListener;
-import android.widget.Toast;
 
-***REMOVED***
 ***REMOVED***
 ***REMOVED***
 
@@ -109,6 +101,8 @@ public class Details extends CustomWindow {
         expListView.setAdapter(listAdapter);
 
         this.title.setText("Employer Details");
+        this.title.setTextSize(TypedValue.COMPLEX_UNIT_SP, 26);
+
         // this.icon.setImageResource(R.drawable.menu_info);
 ***REMOVED***
 
@@ -124,15 +118,12 @@ public class Details extends CustomWindow {
         // Adding child data
         List<String> osha = new ArrayList<String>();
         addMapToList(oshaViolations, osha);
-        osha.add(String.format("%d violations in the past 6 years\n ", oshaViolationCount));
 
         List<String> minWage = new ArrayList<String>();
         addMapToList(minWageViolations, minWage);
-        minWage.add(String.format("%d violations in the past 6 years\n ", minWageViolationCount));
 
         List<String> wageTheft = new ArrayList<String>();
         addMapToList(wageTheftViolations, wageTheft);
-        wageTheft.add(String.format("%d violations in the past 6 years\n ", wageTheftViolationCount));
 
         listDataChild.put(listDataHeader.get(0), osha); // Header, Child data
         listDataChild.put(listDataHeader.get(1), minWage);
@@ -141,10 +132,14 @@ public class Details extends CustomWindow {
 
     public static void addMapToList(Map map, List list) {
         Iterator it = map.entrySet().iterator();
-        while (it.hasNext()) {
-            Map.Entry pair = (Map.Entry) it.next();
-            list.add(pair.getKey() + " : " + pair.getValue());
-            it.remove();
+        if (map.isEmpty()) {
+            list.add("Nothing to show.");
+    ***REMOVED*** else {
+            while (it.hasNext()) {
+                Map.Entry pair = (Map.Entry) it.next();
+                list.add(String.format("%s on %s", pair.getValue(), pair.getKey()));
+                it.remove();
+        ***REMOVED***
     ***REMOVED***
 ***REMOVED***
 ***REMOVED***

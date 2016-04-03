@@ -2,6 +2,7 @@
 
 import android.app.Activity;
 ***REMOVED***
+***REMOVED***
 import android.view.Window;
 import android.widget.ImageView;
 ***REMOVED***
@@ -17,7 +18,6 @@ public class CustomWindow extends Activity {
 ***REMOVED***
 ***REMOVED***
 ***REMOVED***
-
         requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
 
         setContentView(R.layout.content_main);
