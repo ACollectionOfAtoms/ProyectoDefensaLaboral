@@ -50,7 +50,6 @@ public class Details extends CustomWindow {
         TextView postalView = (TextView) findViewById(R.id.details_emp_postal);
         TextView addressView = (TextView) findViewById(R.id.details_emp_address);
         TextView violationCountView = (TextView) findViewById(R.id.details_total_violations);
-        TextView violationDataView = (TextView) findViewById(R.id.details_violation_data);
 
 ***REMOVED***
         name = intent.getStringExtra(NAME);
