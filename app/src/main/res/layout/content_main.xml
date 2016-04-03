@@ -10,16 +10,16 @@
     tools:context="org.workersdefense.httpwww.proyectodefensalaboral.MainActivity"
     tools:showIn="@layout/activity_main">
     <LinearLayout
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
+        android:paddingLeft="30sp"
+        android:paddingRight="30sp"
         android:gravity="center"
         android:layout_weight="0.1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
     </LinearLayout>
     <LinearLayout
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
+        android:paddingLeft="30sp"
+        android:paddingRight="30sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
@@ -31,12 +31,13 @@
             android:text="Search by Name"/>
     </LinearLayout>
     <LinearLayout
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
+        android:paddingLeft="30sp"
+        android:paddingRight="30sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <EditText
             android:id="@+id/emp_name"
+            android:singleLine="true"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -44,16 +45,16 @@
             android:layout_marginRight="2dp"/>
     </LinearLayout>
     <LinearLayout
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
+        android:paddingLeft="30sp"
+        android:paddingRight="30sp"
         android:gravity="center"
         android:layout_weight="0.10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
     </LinearLayout>
     <LinearLayout
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
+        android:paddingLeft="30sp"
+        android:paddingRight="30sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
@@ -65,19 +66,20 @@
             android:text="Search by Zip Code"/>
     </LinearLayout>
     <LinearLayout
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
+        android:paddingLeft="30sp"
+        android:paddingRight="30sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <EditText
             android:id="@+id/zipcode"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:singleLine="true"
             android:layout_weight="1" />
     </LinearLayout>
     <LinearLayout
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
+        android:paddingLeft="30sp"
+        android:paddingRight="30sp"
         android:gravity="center"
         android:layout_weight="1"
         android:layout_width="wrap_content"
@@ -86,7 +88,7 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.1"
+        android:layout_weight="0.2"
         android:gravity="center|bottom"
         android:orientation="vertical">
         <Button

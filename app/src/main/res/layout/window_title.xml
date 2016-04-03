@@ -3,9 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="fill_parent"
-    android:layout_height="35dip"
+    android:layout_height="35sp"
     android:gravity="center_vertical|center_horizontal"
-    android:paddingLeft="5dip"
+    android:paddingLeft="5sp"
     android:background="#c9e5c8"
     >
 
@@ -14,15 +14,15 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center"
-        android:paddingRight="5dip"
+        android:paddingRight="5sp"
         android:layout_gravity="center">
 
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="5dip"
-            android:textSize="16dip"
+            android:paddingTop="5sp"
+            android:textSize="16sp"
             android:textColor="#000000"
             android:gravity="center"
             android:layout_gravity="center"/>
