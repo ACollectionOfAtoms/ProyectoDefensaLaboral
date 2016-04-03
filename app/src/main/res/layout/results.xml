@@ -10,6 +10,8 @@
                 tools:context=".Results" >
     <ListView
         android:id="@+id/results_list"
+        android:divider="#ffffff"
+        android:dividerHeight="5dp"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
 
