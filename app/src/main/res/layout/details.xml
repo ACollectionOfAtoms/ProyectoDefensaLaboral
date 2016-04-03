@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:background="#fffcee"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent">
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
     <LinearLayout
         android:layout_weight="1"
         android:paddingTop="20sp"
@@ -61,7 +61,7 @@
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
-        android:layout_weight="0.5"
+        android:layout_weight="0.4"
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
@@ -74,5 +74,20 @@
 
         </ExpandableListView>
     </LinearLayout>
-    <!---TODO Add "Help" button" -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.2"
+        android:gravity="center|bottom"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/bHelp"
+            android:background="#c9e5c8"
+            android:layout_width="fill_parent"
+            android:textSize="26sp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal|center"
+            android:text="HELP"/>
+    </LinearLayout>
 </LinearLayout>

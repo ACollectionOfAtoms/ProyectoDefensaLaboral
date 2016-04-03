@@ -4,6 +4,8 @@
 ***REMOVED***
 ***REMOVED***
 ***REMOVED***
+import android.widget.Button;
+***REMOVED***
 ***REMOVED***
 ***REMOVED***
 import java.util.Iterator;
@@ -39,7 +41,15 @@ public class Details extends CustomWindow {
 ***REMOVED***
 ***REMOVED***
         setContentView(R.layout.details);
-
+        Button helpButton= (Button) findViewById(R.id.bHelp);
+        helpButton.setOnClickListener(new View.OnClickListener() {
+        ***REMOVED***
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(Details.this, Help.class);
+                startActivity(intent);
+        ***REMOVED***
+    ***REMOVED***);
         String name;
         String postal;
         String address;
