@@ -13,6 +13,7 @@
         android:background="#ffffff"
         android:paddingTop="5sp"
         android:paddingBottom="5sp"
+        android:textSize="16sp"
         android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft" />
 
 </LinearLayout>

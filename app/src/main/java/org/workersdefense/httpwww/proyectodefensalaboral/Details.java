@@ -3,7 +3,6 @@
 ***REMOVED***
 ***REMOVED***
 ***REMOVED***
-***REMOVED***
 import android.widget.Button;
 ***REMOVED***
 ***REMOVED***

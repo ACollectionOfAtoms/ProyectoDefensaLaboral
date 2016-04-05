@@ -4,7 +4,6 @@
 import android.net.Uri;
 ***REMOVED***
 ***REMOVED***
-***REMOVED***
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;

@@ -4,7 +4,6 @@
 import java.util.List;
 
 import android.content.Context;
-import android.graphics.Typeface;
 import android.view.LayoutInflater;
 ***REMOVED***
 import android.view.ViewGroup;
