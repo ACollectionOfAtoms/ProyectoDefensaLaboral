@@ -28,7 +28,6 @@ public class MainActivity extends CustomWindow {
 ***REMOVED***
 ***REMOVED***
         this.title.setText("Know Your Employer");
-        this.title.setTextSize(TypedValue.COMPLEX_UNIT_SP, 26);
 
         mButton = (Button) findViewById(R.id.b1);
         mEmpNameEditText = (EditText) findViewById(R.id.emp_name);

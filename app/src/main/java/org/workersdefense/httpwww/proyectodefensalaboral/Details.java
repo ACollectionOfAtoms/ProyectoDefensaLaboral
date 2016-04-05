@@ -110,8 +110,6 @@ public class Details extends CustomWindow {
         expListView.setAdapter(listAdapter);
 
         this.title.setText("Employer Details");
-        this.title.setTextSize(TypedValue.COMPLEX_UNIT_SP, 26);
-
         // this.icon.setImageResource(R.drawable.menu_info);
 ***REMOVED***
 

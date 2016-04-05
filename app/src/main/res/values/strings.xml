@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">"Proyecto Defensa Laboral "</string>
+    <string name="help_text"><b>OSHA violations</b> are reported when an employer does not follow the health and safety regulations prescribed by the federal government.
+\n\n
+<b>Minimum wage and overtime violations</b> are reported when an employer refuses to pay a worker the minimum wage prescribed by law or does not pay the overtime rate when applicable.
+\n\n
+<b>Wage theft claims</b> are made when an employer refuses to pay a worker the full amount due for the work the worker did.
+</string>
 </resources>

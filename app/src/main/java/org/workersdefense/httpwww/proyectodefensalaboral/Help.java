@@ -14,6 +14,5 @@ public class Help extends CustomWindow {
         setContentView(R.layout.help);
         String title = "HELP";
 ***REMOVED***
-        this.title.setTextSize(TypedValue.COMPLEX_UNIT_SP, 26);
 ***REMOVED***
 ***REMOVED***
