@@ -120,7 +120,6 @@ public class Details extends CustomWindow {
         listDataHeader.add("Minimum Wage and Overtime: " +  minWageViolationCount + " Violations");
         listDataHeader.add("Wage Theft: " + wageTheftViolationCount + " Wage Theft Claims");
 
-        //TODO modify dividers for expandable list
         // Adding child data
         List<String> osha = new ArrayList<String>();
         addMapToList(oshaViolations, osha);

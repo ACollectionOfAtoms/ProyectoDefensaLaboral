@@ -68,7 +68,7 @@
         android:layout_height="fill_parent">
         <ExpandableListView
             android:id="@+id/lvExp"
-            android:divider="#fffcee"
+            android:divider="@null"
             android:dividerHeight="5sp"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
