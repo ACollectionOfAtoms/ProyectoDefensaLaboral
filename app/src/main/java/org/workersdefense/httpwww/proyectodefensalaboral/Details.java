@@ -68,7 +68,6 @@ public class Details extends CustomWindow {
 
 ***REMOVED***
             violationData = new JSONArray(intent.getStringExtra("violationData"));
-            System.out.println(violationData);
             for (int i = 0; i < violationData.length(); i++) {
                 System.out.println(violationData.getJSONObject(i).get("type"));
                 if (violationData.getJSONObject(i).get("type").equals("OSHA")) {
@@ -121,6 +120,7 @@ public class Details extends CustomWindow {
         listDataHeader.add("Minimum Wage and Overtime: " +  minWageViolationCount + " Violations");
         listDataHeader.add("Wage Theft: " + wageTheftViolationCount + " Wage Theft Claims");
 
+        //TODO modify dividers for expandable list
         // Adding child data
         List<String> osha = new ArrayList<String>();
         addMapToList(oshaViolations, osha);

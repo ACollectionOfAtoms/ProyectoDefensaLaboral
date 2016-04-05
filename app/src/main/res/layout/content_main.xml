@@ -72,6 +72,7 @@
         android:layout_height="wrap_content">
         <EditText
             android:id="@+id/zipcode"
+            android:inputType="number"
             android:layout_height="wrap_content"
             android:layout_width="0dp"
             android:singleLine="true"

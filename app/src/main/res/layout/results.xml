@@ -11,11 +11,13 @@
     <TextView
         android:id="@+id/searching_label"
         android:textSize="16sp"
+        android:textColor="#6e6e6c"
         android:text="Searching..."
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
     <TextView
         android:id="@+id/no_results_label"
+        android:textColor="#6e6e6c"
         android:visibility="gone"
         android:textSize="16sp"
         android:text="No results found!"
