@@ -7,5 +7,56 @@
         <b>Minimum wage and overtime violations</b> are reported when an employer refuses to pay a worker the minimum wage prescribed by law or does not pay the overtime rate when applicable.
         \n\n
         <b>Wage theft claims</b> are made when an employer refuses to pay a worker the full amount due for the work the worker did.
-</string>
+    </string>
+    <string name="search_by_name">
+        Search By Name
+    </string>
+    <string name="search_by_zip">
+        Search By Zip Code
+    </string>
+    <string name="total_violations">
+        Total Violations
+    </string>
+    <string name="osha_violations">
+        OSHA Violations
+    </string>
+    <string name="min_wage_violations">
+        Minimum Wage/Overtime Violations
+    </string>
+    <string name="wage_theft_claims">
+        Wage Theft Claims
+    </string>
+    <string name="GO">
+        GO
+    </string>
+    <string name="there_was_an_error">
+        There was an error getting employer data.
+    </string>
+    <string name="info">
+        Info
+    </string>
+    <string name="close">
+        Close
+    </string>
+    <string name="search_results">
+        Search Results
+    </string>
+    <string name="know_your_employer">
+        Know Your Employer
+    </string>
+    <string name="searching">
+        Searching
+    </string>
+    <string name="zip_code">
+        Zip Code
+    </string>
+    <string name="emp_name_help_text">
+        Type Employer's/Company's Name
+    </string>
+    <string name="emp_zip_code_help_text">
+        Type Employer's Zipcode
+    </string>
+    <string name="warning_text">
+        Please enter a zipcode or employer name.
+    </string>
 </resources>

@@ -26,13 +26,13 @@ public class MainActivity extends CustomWindow {
 ***REMOVED***
 ***REMOVED***
 ***REMOVED***
-        this.title.setText("Know Your Employer");
+        this.title.setText(getResources().getString(R.string.know_your_employer));
 
         mButton = (Button) findViewById(R.id.b1);
         mEmpNameEditText = (EditText) findViewById(R.id.emp_name);
-        mEmpNameEditText.setHint("Type Employer's/Company's Name");
+        mEmpNameEditText.setHint(getResources().getString(R.string.emp_name_help_text));
         mEmpZipEditText = (EditText) findViewById(R.id.zipcode);
-        mEmpZipEditText.setHint("Type Employer's Zipcode");
+        mEmpZipEditText.setHint(getResources().getString(R.string.emp_zip_code_help_text));
 
         mButton.setOnClickListener(new View.OnClickListener() {
         ***REMOVED***
@@ -40,7 +40,7 @@ public class MainActivity extends CustomWindow {
                 String searchName = mEmpNameEditText.getText().toString();
                 String searchZip = mEmpZipEditText.getText().toString();
                 if (searchName.matches("") && searchZip.matches("")) {
-                    makeToast("Please enter a zipcode or employer name.");
+                    makeToast(getResources().getString(R.string.warning_text));
                     return;
             ***REMOVED***
 
