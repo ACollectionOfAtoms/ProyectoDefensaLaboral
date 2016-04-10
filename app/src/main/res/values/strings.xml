@@ -45,18 +45,21 @@
         Know Your Employer
     </string>
     <string name="searching">
-        Searching
+        Searching...
     </string>
     <string name="zip_code">
         Zip Code
     </string>
     <string name="emp_name_help_text">
-        Type Employer's/Company's Name
+        Type Employer\'s Company\'s Name
     </string>
     <string name="emp_zip_code_help_text">
-        Type Employer's Zipcode
+        Type Employer\'s Zipcode
     </string>
     <string name="warning_text">
         Please enter a zipcode or employer name.
+    </string>
+    <string name="details_title">
+        Employer Details
     </string>
 </resources>

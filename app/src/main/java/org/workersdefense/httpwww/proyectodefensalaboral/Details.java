@@ -107,7 +107,7 @@ public class Details extends CustomWindow {
         //setting list adapter
         expListView.setAdapter(listAdapter);
 
-        this.title.setText("Employer Details");
+        this.title.setText(getResources().getString(R.string.details_title));
         // this.icon.setImageResource(R.drawable.menu_info);
 ***REMOVED***
 
