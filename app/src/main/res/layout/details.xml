@@ -89,6 +89,6 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:layout_gravity="center_horizontal|center"
-            android:text="HELP"/>
+            android:text="@string/help"/>
     </LinearLayout>
 </LinearLayout>

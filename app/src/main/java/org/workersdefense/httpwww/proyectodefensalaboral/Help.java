@@ -10,7 +10,7 @@ public class Help extends CustomWindow {
 ***REMOVED***
 ***REMOVED***
         setContentView(R.layout.help);
-        String title = "HELP";
+        String title = getResources().getString(R.string.help);
 ***REMOVED***
 ***REMOVED***
 ***REMOVED***

@@ -69,7 +69,6 @@ public class Details extends CustomWindow {
 ***REMOVED***
             violationData = new JSONArray(intent.getStringExtra("violationData"));
             for (int i = 0; i < violationData.length(); i++) {
-                System.out.println(violationData.getJSONObject(i).get("type"));
                 if (violationData.getJSONObject(i).get("type").equals("OSHA")) {
                     String vioDate = violationData.getJSONObject(i).getString("date");
                     String vioCount = violationData.getJSONObject(i).getString("count");
@@ -116,9 +115,9 @@ public class Details extends CustomWindow {
         listDataChild = new HashMap<String, List<String>>();
 
         // Adding child data
-        listDataHeader.add("OSHA: " + oshaViolationCount + " Violations");
-        listDataHeader.add("Minimum Wage and Overtime: " +  minWageViolationCount + " Violations");
-        listDataHeader.add("Wage Theft: " + wageTheftViolationCount + " Wage Theft Claims");
+        listDataHeader.add("OSHA: " + oshaViolationCount + " " + getResources().getString(R.string.violations));
+        listDataHeader.add(getResources().getString(R.string.Minimum_wage_and_OverTime)+ ": " +  minWageViolationCount + " " + getResources().getString(R.string.violations));
+        listDataHeader.add(getResources().getString(R.string.wage_theft) + ": " + wageTheftViolationCount + " " + getResources().getString(R.string.WageTheftClaims));
 
         // Adding child data
         List<String> osha = new ArrayList<String>();
@@ -135,10 +134,10 @@ public class Details extends CustomWindow {
         listDataChild.put(listDataHeader.get(2), wageTheft);
 ***REMOVED***
 
-    public static void addMapToList(Map map, List list) {
+    public void addMapToList(Map map, List list) {
         Iterator it = map.entrySet().iterator();
         if (map.isEmpty()) {
-            list.add("Nothing to show.");
+            list.add(getResources().getString(R.string.nothing_to_show));
     ***REMOVED*** else {
             while (it.hasNext()) {
                 Map.Entry pair = (Map.Entry) it.next();

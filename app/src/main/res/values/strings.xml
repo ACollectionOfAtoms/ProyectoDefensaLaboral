@@ -45,21 +45,42 @@
         Know Your Employer
     </string>
     <string name="searching">
-        Searching...
+        Searching…
     </string>
     <string name="zip_code">
         Zip Code
     </string>
     <string name="emp_name_help_text">
-        Type Employer\'s Company\'s Name
+        Type Employer\'s/Company\'s Name
     </string>
     <string name="emp_zip_code_help_text">
-        Type Employer\'s Zipcode
+        Type Employer\'s Zip Code
     </string>
     <string name="warning_text">
-        Please enter a zipcode or employer name.
+        Please enter a zip code or employer name.
     </string>
     <string name="details_title">
         Employer Details
+    </string>
+    <string name="results_found">
+        results found.
+    </string>
+    <string name="violations">
+        Violations
+    </string>
+    <string name="WageTheftClaims">
+        Wage Theft Claims
+    </string>
+    <string name="Minimum_wage_and_OverTime">
+        Minimum Wage and Overtime
+    </string>
+    <string name="wage_theft">
+        Wage Theft
+    </string>
+    <string name="help">
+        HELP
+    </string>
+    <string name="nothing_to_show">
+        Nothing to show.
     </string>
 </resources>
