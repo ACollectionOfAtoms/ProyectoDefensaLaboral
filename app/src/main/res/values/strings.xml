@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">"Proyecto Defensa Laboral "</string>
+    <string name="app_name">Workers Defense Project</string>
     <string name="help_text">
         \n
         <b>OSHA violations</b> are reported when an employer does not follow the health and safety regulations prescribed by the federal government.
@@ -50,10 +50,10 @@
     <string name="zip_code">
         Zip Code
     </string>
-    <string name="emp_name_help_text">
+    <string name="emp_name_help_text" translatable="false">
         Type Employer\'s/Company\'s Name
     </string>
-    <string name="emp_zip_code_help_text">
+    <string name="emp_zip_code_help_text" translatable="false">
         Type Employer\'s Zip Code
     </string>
     <string name="warning_text">
@@ -82,5 +82,8 @@
     </string>
     <string name="nothing_to_show">
         Nothing to show.
+    </string>
+    <string name="on">
+        %1$s on %2$s
     </string>
 </resources>

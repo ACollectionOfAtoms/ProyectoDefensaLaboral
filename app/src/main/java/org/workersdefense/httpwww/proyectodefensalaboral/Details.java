@@ -1,6 +1,7 @@
 ***REMOVED***
 
 ***REMOVED***
+import android.content.res.Resources;
 ***REMOVED***
 ***REMOVED***
 import android.widget.Button;
@@ -141,7 +142,8 @@ public class Details extends CustomWindow {
     ***REMOVED*** else {
             while (it.hasNext()) {
                 Map.Entry pair = (Map.Entry) it.next();
-                list.add(String.format("%s on %s", pair.getValue(), pair.getKey()));
+                Resources res = getResources();
+                list.add(String.format(res.getString(R.string.on), pair.getValue(), pair.getKey()));
                 it.remove();
         ***REMOVED***
     ***REMOVED***
