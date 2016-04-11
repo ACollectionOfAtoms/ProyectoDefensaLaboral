@@ -17,7 +17,7 @@
     <string name="on">%1$s en %2$s</string>
     <string name="osha_violations">OSHA Violaciónes</string>
     <string name="results_found">resultados encontrados.</string>
-    <string name="help_text"><b>Las violaciónes de OSHA</b> se present an cuando un empleador no sigue con las norms de salad y seguridad prescripts por el gobierno federal.\n\n <b> Las violaciónes de horas y sueldos</b> se present an cuando un empleador se niega a pager a un trabajador el salario mínimo establecido por la ley, no paga la tasa de horas extra en su caso, y si no sigue con otro tipo de leyes laborales.\n\n<b>Las reclamaciones del robo de salarios</b> se hacen cuando un trabajador presenta una queja porque el empleador se niega a pagar a un trabajador que lo debe.</string>
+    <string name="help_text"><b>Las violaciónes de OSHA</b> se present an cuando un empleador no sigue con las norms de salad y seguridad prescripts por el gobierno federal.\n\n<b>Las violaciónes de horas y sueldos</b> se present an cuando un empleador se niega a pager a un trabajador el salario mínimo establecido por la ley, no paga la tasa de horas extra en su caso, y si no sigue con otro tipo de leyes laborales.\n\n<b>Las reclamaciones del robo de salarios</b> se hacen cuando un trabajador presenta una queja porque el empleador se niega a pagar a un trabajador que lo debe.</string>
     <string name="searching">Buscando...</string>
     <string name="there_was_an_error">Se ha produced un error al obtainer los dates del empleador</string>
     <string name="wage_theft_claims">Reclamaciones del robo de salarios</string>
@@ -26,4 +26,7 @@
     <string name="wage_theft"> El robo de salarios</string>
     <string name="WageTheftClaims">Robo de las reivindicaciones salariales</string>
     <string name="Minimum_wage_and_OverTime">Violaciónes de horas y sueldos</string>
+    <string name="emp_name_help_text">Escriba el nombre del empleador</string>
+    <string name="emp_zip_code_help_text">Escriba el codigo postal del empleador</string>
+    <string name="no_results_found">¡No se han encontrado resultados!</string>
 </resources>

@@ -50,10 +50,10 @@
     <string name="zip_code">
         Zip Code
     </string>
-    <string name="emp_name_help_text" translatable="false">
+    <string name="emp_name_help_text">
         Type Employer\'s/Company\'s Name
     </string>
-    <string name="emp_zip_code_help_text" translatable="false">
+    <string name="emp_zip_code_help_text">
         Type Employer\'s Zip Code
     </string>
     <string name="warning_text">
@@ -85,5 +85,8 @@
     </string>
     <string name="on">
         %1$s on %2$s
+    </string>
+    <string name="no_results_found">
+        No results found!
     </string>
 </resources>

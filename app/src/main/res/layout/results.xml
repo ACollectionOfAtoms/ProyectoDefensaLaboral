@@ -12,7 +12,7 @@
         android:id="@+id/searching_label"
         android:textSize="16sp"
         android:textColor="#6e6e6c"
-        android:text="Searching..."
+        android:text="@string/searching"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
     <TextView
