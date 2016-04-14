@@ -15,7 +15,7 @@
         Search By Zip Code
     </string>
     <string name="total_violations">
-        Total Violations
+        Violations:
     </string>
     <string name="osha_violations">
         OSHA Violations
@@ -27,7 +27,7 @@
         Wage Theft Claims
     </string>
     <string name="GO">
-        GO
+        Go
     </string>
     <string name="there_was_an_error">
         There was an error getting employer data.
@@ -78,7 +78,7 @@
         Wage Theft
     </string>
     <string name="help">
-        HELP
+        Help
     </string>
     <string name="nothing_to_show">
         Nothing to show.

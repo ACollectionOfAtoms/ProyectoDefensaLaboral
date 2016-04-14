@@ -5,7 +5,7 @@
     <string name="search_by_name">Busca por el nombre del empleador</string>
     <string name="search_by_zip">Busca por el codigo postal</string>
     <string name="violations">Violaciónes</string>
-    <string name="total_violations">Violaciónes totalesa</string>
+    <string name="total_violations">Violaciónes:</string>
     <string name="search_results">Resultados</string>
     <string name="help">Ayuda </string>
     <string name="min_wage_violations">Violaciónes de horas y sueldos</string>
