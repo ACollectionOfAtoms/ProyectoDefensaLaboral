@@ -68,6 +68,7 @@ public class Details extends CustomWindow {
         address = intent.getStringExtra(ADDRESS);
         violationCount = intent.getStringExtra(VIOLATIONCOUNT);
 
+
 ***REMOVED***
             violationData = new JSONArray(intent.getStringExtra("violationData"));
             for (int i = 0; i < violationData.length(); i++) {
