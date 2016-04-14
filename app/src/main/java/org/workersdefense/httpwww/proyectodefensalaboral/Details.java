@@ -11,6 +11,7 @@ import android.widget.Button;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.io.*;
 
 import android.widget.ExpandableListView;
 
@@ -70,20 +71,36 @@ public class Details extends CustomWindow {
 ***REMOVED***
             violationData = new JSONArray(intent.getStringExtra("violationData"));
             for (int i = 0; i < violationData.length(); i++) {
-                if (violationData.getJSONObject(i).get("type").equals("OSHA")) {
+                String type = (String) violationData.getJSONObject(i).get("type");
+                if (type.replaceAll("\\s+","").equals("OSHA")) {
                     String vioDate = violationData.getJSONObject(i).getString("date");
                     String vioCount = violationData.getJSONObject(i).getString("count");
-                    oshaViolations.put(vioDate, vioCount);
+                    if (oshaViolations.containsKey(vioDate)) {
+                        int total = Integer.parseInt(oshaViolations.get(vioDate)) + Integer.parseInt(vioCount);
+                        oshaViolations.put(vioDate, Integer.toString(total));
+                ***REMOVED*** else {
+                        oshaViolations.put(vioDate, vioCount);
+                ***REMOVED***
                     oshaViolationCount += Integer.parseInt(vioCount);
-            ***REMOVED*** else if (violationData.getJSONObject(i).get("type").equals("TWC")) {
+            ***REMOVED*** else if (type.replaceAll("\\s+","").equals("TWC")) {
                     String vioDate = violationData.getJSONObject(i).getString("date");
                     String vioCount = violationData.getJSONObject(i).getString("count");
-                    wageTheftViolations.put(vioDate, vioCount);
+                    if (wageTheftViolations.containsKey(vioDate)) {
+                        int total = Integer.parseInt(wageTheftViolations.get(vioDate)) + Integer.parseInt(vioCount);
+                        wageTheftViolations.put(vioDate, Integer.toString(total));
+                ***REMOVED*** else {
+                        wageTheftViolations.put(vioDate, vioCount);
+                ***REMOVED***
                     wageTheftViolationCount += Integer.parseInt(vioCount);
-            ***REMOVED*** else if (violationData.getJSONObject(i).get("type").equals("WHD")) {
+            ***REMOVED*** else if (type.replaceAll("\\s+","").equals("WHD")) {
                     String vioDate = violationData.getJSONObject(i).getString("date");
                     String vioCount = violationData.getJSONObject(i).getString("count");
-                    minWageViolations.put(vioDate, vioCount);
+                    if (minWageViolations.containsKey(vioDate)) {
+                        int total = Integer.parseInt(minWageViolations.get(vioDate)) + Integer.parseInt(vioCount);
+                        minWageViolations.put(vioDate, Integer.toString(total));
+                ***REMOVED*** else {
+                        minWageViolations.put(vioDate, vioCount);
+                ***REMOVED***
                     minWageViolationCount += Integer.parseInt(vioCount);
             ***REMOVED***
         ***REMOVED***
@@ -134,7 +151,7 @@ public class Details extends CustomWindow {
         listDataChild.put(listDataHeader.get(1), minWage);
         listDataChild.put(listDataHeader.get(2), wageTheft);
 ***REMOVED***
-
+    //TODO Mustang building materials. Discard NA and catch OSHA
     public void addMapToList(Map map, List list) {
         Iterator it = map.entrySet().iterator();
         if (map.isEmpty()) {

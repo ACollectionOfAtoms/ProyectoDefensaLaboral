@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Proyecto Defensa Laboral</string>
+    <string name="app_name">Informanos</string>
     <string name="GO">Ir</string>
     <string name="search_by_name">Busca por el nombre del empleador</string>
     <string name="search_by_zip">Busca por el codigo postal</string>
     <string name="violations">Violaciónes</string>
     <string name="total_violations">Violaciónes totalesa</string>
-    <string name="search_results">Resultados de la búsqueda</string>
+    <string name="search_results">Resultados</string>
     <string name="help">Ayuda </string>
     <string name="min_wage_violations">Violaciónes de horas y sueldos</string>
     <string name="know_your_employer">Conozca su empleador</string>

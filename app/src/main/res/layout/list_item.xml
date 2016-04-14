@@ -15,5 +15,4 @@
         android:paddingBottom="5sp"
         android:textSize="16sp"
         android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft" />
-
 </LinearLayout>
