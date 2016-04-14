@@ -10,6 +10,7 @@ import android.widget.Button;
 ***REMOVED***
 import java.util.Iterator;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.io.*;
 
@@ -66,6 +67,13 @@ public class Details extends CustomWindow {
         name = intent.getStringExtra(NAME);
         postal = intent.getStringExtra(POSTAL);
         address = intent.getStringExtra(ADDRESS);
+        if (address.equals("No address - no direccion")) {
+            if (Locale.getDefault().getLanguage().equals("en")){
+                address = "No address";
+        ***REMOVED*** else {
+                address = "No dirección";
+        ***REMOVED***
+    ***REMOVED***
         violationCount = intent.getStringExtra(VIOLATIONCOUNT);
 
 
