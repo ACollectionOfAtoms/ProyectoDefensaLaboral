@@ -1,23 +1,23 @@
-***REMOVED***
+package org.workersdefense.httpwww.proyectodefensalaboral;
 
 import android.app.Activity;
-***REMOVED***
-***REMOVED***
+import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
 import android.widget.ImageView;
-***REMOVED***
+import android.widget.TextView;
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
+/**
+ * Created by ahernandez on 3/22/16.
+ */
 
 public class CustomWindow extends Activity {
     protected TextView title;
     protected ImageView icon;
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
 
         setContentView(R.layout.content_main);
@@ -26,5 +26,5 @@ public class CustomWindow extends Activity {
 
         title = (TextView) findViewById(R.id.title);
         icon  = (ImageView) findViewById(R.id.icon);
-***REMOVED***
-***REMOVED***
+    }
+}

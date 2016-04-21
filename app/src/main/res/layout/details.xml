@@ -85,7 +85,7 @@
             android:id="@+id/bHelp"
             android:background="#c9e5c8"
             android:layout_width="fill_parent"
-            android:textSize="26sp"
+            android:textSize="24sp"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:layout_gravity="center_horizontal|center"

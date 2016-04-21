@@ -1,16 +1,16 @@
-***REMOVED***
+package org.workersdefense.httpwww.proyectodefensalaboral;
 
-***REMOVED***
+import android.os.Bundle;
 
-***REMOVED***
+/**
  * Created by dhernandez on 4/3/16.
-***REMOVED***
+ */
 public class Help extends CustomWindow {
 
-***REMOVED***
-***REMOVED***
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.help);
         String title = getResources().getString(R.string.help);
-***REMOVED***
-***REMOVED***
-***REMOVED***
+        this.title.setText(title);
+    }
+}

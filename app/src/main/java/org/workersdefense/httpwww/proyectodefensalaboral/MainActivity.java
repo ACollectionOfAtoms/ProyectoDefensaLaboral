@@ -1,9 +1,9 @@
-***REMOVED***
+package org.workersdefense.httpwww.proyectodefensalaboral;
 
-***REMOVED***
+import android.content.Intent;
 import android.net.Uri;
-***REMOVED***
-***REMOVED***
+import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -17,15 +17,15 @@ public class MainActivity extends CustomWindow {
     Button mButton;
     EditText mEmpZipEditText;
     EditText mEmpNameEditText;
-    ***REMOVED***
+    /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
-    ***REMOVED***
+     */
     private GoogleApiClient client;
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         this.title.setText(getResources().getString(R.string.know_your_employer));
 
         mButton = (Button) findViewById(R.id.b1);
@@ -35,32 +35,32 @@ public class MainActivity extends CustomWindow {
         mEmpZipEditText.setHint(getResources().getString(R.string.emp_zip_code_help_text));
 
         mButton.setOnClickListener(new View.OnClickListener() {
-        ***REMOVED***
+            @Override
             public void onClick(View v) {
                 String searchName = mEmpNameEditText.getText().toString();
                 String searchZip = mEmpZipEditText.getText().toString();
                 if (searchName.matches("") && searchZip.matches("")) {
                     makeToast(getResources().getString(R.string.warning_text));
                     return;
-            ***REMOVED***
+                }
 
                 Intent intent = new Intent();
                 intent.putExtra("name", searchName);
                 intent.putExtra("zip", searchZip);
                 intent.setClass(MainActivity.this, Results.class);
                 startActivity(intent);
-        ***REMOVED***
-    ***REMOVED***);
+            }
+        });
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
-***REMOVED***
+    }
 
     public void makeToast(String text) {
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
-***REMOVED***
+    }
 
-***REMOVED***
+    @Override
     public void onStart() {
         super.onStart();
 
@@ -78,9 +78,9 @@ public class MainActivity extends CustomWindow {
                 Uri.parse("android-app://org.workersdefense.httpwww.proyectodefensalaboral/http/host/path")
         );
         AppIndex.AppIndexApi.start(client, viewAction);
-***REMOVED***
+    }
 
-***REMOVED***
+    @Override
     public void onStop() {
         super.onStop();
 
@@ -98,5 +98,5 @@ public class MainActivity extends CustomWindow {
         );
         AppIndex.AppIndexApi.end(client, viewAction);
         client.disconnect();
-***REMOVED***
-***REMOVED***
+    }
+}
