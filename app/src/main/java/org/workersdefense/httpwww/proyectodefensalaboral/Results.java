@@ -1,6 +1,7 @@
 package org.workersdefense.httpwww.proyectodefensalaboral;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
@@ -30,10 +31,9 @@ import java.util.HashMap;
  */
 
 public class Results extends CustomWindow implements SearchListener {
-
-    private static final APIClient client = new APIClient("SENSITIVE", "INFORMATION");
-    private static final Index index = client.initIndex("WDPEmployers");
     ListView list;
+    Index index;
+    APIClient algoliaClient;
     TextView name;
     TextView address;
     TextView violations;
@@ -52,6 +52,9 @@ public class Results extends CustomWindow implements SearchListener {
         setContentView(R.layout.results);
         String title = getResources().getString(R.string.search_results);
         this.title.setText(title);
+        String apikey = getResources().getString(R.string.api_key);
+        algoliaClient = new APIClient("R7X1GJKUPR", apikey);
+        index = algoliaClient.initIndex("WDPEmployers");
 
         Intent intent = getIntent();
         String empName = intent.getStringExtra("name");

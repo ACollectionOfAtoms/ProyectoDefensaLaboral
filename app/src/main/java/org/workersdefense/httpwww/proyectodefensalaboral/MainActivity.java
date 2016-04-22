@@ -43,7 +43,6 @@ public class MainActivity extends CustomWindow {
                     makeToast(getResources().getString(R.string.warning_text));
                     return;
                 }
-
                 Intent intent = new Intent();
                 intent.putExtra("name", searchName);
                 intent.putExtra("zip", searchZip);
