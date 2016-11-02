@@ -5,3 +5,4 @@ with OSHA, Wage theft, and/or minimum wage violations
 
 http://www.workersdefense.org/
 
+![Example Use](https://thumbs.gfycat.com/GreedyLongHerring-size_restricted.gif "Example Use")
